@@ -139,7 +139,7 @@
         <h2>Start a conversation.</h2>
         <p>Tell us what you are launching, fixing or trying to make impossible to ignore.</p>
       </div>
-      <form class="contact-form reveal" action="https://formsubmit.co/suhinahmad08@yahoo.com" method="POST">
+      <form class="contact-form reveal" action="https://formsubmit.co/ajax/suhinahmad08@yahoo.com" method="POST" id="inquiry-form">
         <input type="hidden" name="_subject" value="New RelentlessGig inquiry" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
@@ -148,6 +148,7 @@
         <label>Email<input type="email" name="email" placeholder="you@company.com" required /></label>
         <label>What are you building?<textarea name="message" rows="4" placeholder="A little context goes a long way..." required></textarea></label>
         <button type="submit">Send inquiry <span>↗</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
@@ -157,6 +158,17 @@
     <p>Marketing • business • startups • creative work</p>
     <a href="#top">Back to top ↑</a>
   </footer>
+
+  <div class="thank-you-modal" id="thank-you-modal" aria-hidden="true">
+    <div class="thank-you-backdrop" data-close-modal></div>
+    <div class="thank-you-card" role="dialog" aria-modal="true" aria-labelledby="thank-you-title">
+      <button class="thank-you-close" type="button" data-close-modal aria-label="Close thank you message">×</button>
+      <p class="eyebrow">Message received</p>
+      <h2 id="thank-you-title">Thank you.</h2>
+      <p>Your inquiry is on its way. We’ll read it carefully and get back to you soon.</p>
+      <button class="thank-you-button" type="button" data-close-modal>Continue exploring</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
