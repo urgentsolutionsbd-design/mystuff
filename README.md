@@ -15,4 +15,3 @@ Open `index.html` in a browser. Internet access is only used to load Google Font
 2. Connect the contact form to Formspree, Netlify Forms, a CRM or custom backend.
 3. Add your domain, analytics and SEO/social metadata.
 4. Optionally replace the generated abstract art with original photography or campaign artwork.
-Website deployment enabled.
